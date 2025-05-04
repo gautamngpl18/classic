@@ -3,6 +3,13 @@ import Skeleton from "./components/Skeleton.js";
 
 // three H1 with sub details of each H1 topics
 export default function App() {
+  const decor = {
+    color: "red",
+    font : "italic",
+    fontSize: "20px",
+    fontFamily: "Arial",
+    
+  };
   return (
     <div className="App">
       <center>
@@ -19,7 +26,7 @@ export default function App() {
         width="300"
         height="200"
       ></img>
-      <p>
+      <p style ={decor}>
         Smooth muscles are involuntary, non-striated muscles found in internal
         organs like the stomach and blood vessels. They control automatic
         functions such as digestion and blood flow through slow, sustained
@@ -29,7 +36,7 @@ export default function App() {
       </p>
       <h1>Cardiac</h1>
       <img src="https://www.shutterstock.com/image-vector/smooth-muscle-cell-vector-anatomy-260nw-502665997.jpg"></img>
-      <p>
+      <p style={decor}>
         Cardiac muscles are involuntary, striated muscles found only in the
         heart, driving its rhythmic contractions. They form a branched network,
         connected by intercalated discs, ensuring synchronized pumping.
